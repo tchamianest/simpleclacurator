@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>this for learning</title>
+        <style>
+            body{
+                margin: 100px;
+            }
+            .screen{
+                width: 200px;
+                height: 20px;
+                border: 2px solid #black;
+                border-color: #black;
+                justify-content:flex-end;
+                display:flex;
+            }
+            .different{
+
+                margin: 5px;
+            
+            }
+            .different button{
+                width: 50px;
+            }
+            .different .sign{
+                background-color: rgb(117, 121, 72);
+                color: rgb(255, 255, 255);
+                font-size: 12px;
+                border: 0.31px solid #black;
+                border-radius: 4px;
+            }
+            .different .sign:hover{
+                color: black;
+                background-color: yellow;
+            }
+            .different .zero{
+                width: 105px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="screen" id="outputDiv"></div>
+        <div class="different">
+            <button onclick="
+                calcuration +='1';
+                outputDiv.innerHTML =(calcuration)
+                console.log(calcuration);
+                ">1</button>
+            <button onclick="
+            calcuration +='2';
+            outputDiv.innerHTML =(calcuration)
+            console.log(calcuration);">2</button>
+
+            <button onclick="
+                calcuration +='3';
+                outputDiv.innerHTML =(calcuration)
+                console.log(calcuration);">3</button>
+
+            <button class="sign" onclick="
+                calcuration +='*';
+                outputDiv.innerHTML =(calcuration)
+                console.log(calcuration);">*
+            </button>
+        </div>
+        <div class="different" >
+            <button onclick="
+            calcuration +='4';
+            outputDiv.innerHTML =(calcuration)
+            console.log(calcuration);">4</button>
+
+            <button onclick="
+                calcuration +='5';
+                outputDiv.innerHTML =(calcuration)
+                console.log(calcuration);">5</button>
+
+            <button onclick="
+            calcuration +='6';
+            outputDiv.innerHTML =(calcuration)
+            console.log(calcuration);">6</button>
+            <button class="sign" onclick="
+            calcuration +='-';
+            outputDiv.innerHTML =(calcuration)
+            console.log(calcuration);">-</button>
+        </div>
+        <div class="different">
+            <button onclick="
+            calcuration +='7';
+            outputDiv.innerHTML =(calcuration)
+            console.log(calcuration);">7</button>
+            <button onclick="
+            calcuration +='8';
+            outputDiv.innerHTML =(calcuration)
+            console.log(calcuration);">8</button>
+            <button onclick="
+            calcuration +='9';
+            outputDiv.innerHTML =(calcuration)
+            console.log(calcuration);">9</button>
+            <button class="sign" onclick="
+            calcuration +='+';
+            outputDiv.innerHTML =(calcuration)
+            console.log(calcuration);">+</button>
+        </div>
+        <div class="different">
+            <button class="zero" onclick="
+            outputDiv.innerHTML +='0'
+            console.log(calcuration);">0</button>
+            <button onclick="
+            calcuration +='.';
+            console.log(calcuration);">.</button>
+            <button class="sign" onclick="
+           outputDiv.innerHTML=eval(calcuration);
+           calcuration =outputDiv.innerHTML=eval(calcuration);
+            console.log(calcuration);
+            ">=</button>
+        </div>
+        
+        
+             <script src="Javascript.js" >
+                    let calcuration=``;
+                    var outputDiv = document.getElementById("outputDiv");
+             </script>
+       
+    </body>
+</html>
